@@ -1,0 +1,70 @@
+Name         : kate
+Version      : 5.0.0
+Release      : 1
+Group        : System/Base
+License      : GPLv2+
+Summary      : Advanced KDE editor applications
+Description  : |
+  An advanced editor component which is used in numerous KDE applications
+  requiring a text editing component.
+URL          : http://www.kde.org
+SetupOptions : -q -n %{name}-%{version}/upstream
+
+Sources:
+    - "%{name}-%{version}.tar.xz"
+
+RpmLintIgnore:
+    - devel-file-in-non-devel-package
+    - no-changelogname-tag
+    - library-without-ldconfig-postin
+    - library-without-ldconfig-postun
+
+Configure    : none
+Builder      : none
+
+PkgBR:
+    - kf5-rpm-macros
+    - extra-cmake-modules
+    - qt5-tools
+    - kconfig-devel
+    - kdoctools-devel
+    - kguiaddons-devel
+    - ki18n-devel
+    - kinit-devel
+    - kjobwidgets-devel
+    - kio-devel
+    - kparts-devel
+    - ktexteditor-devel
+    - kwindowsystem-devel
+    - kitemmodels-devel
+    - kxmlgui-devel
+PkgConfigBR:
+    - Qt5Core
+    - Qt5DBus
+    - Qt5Xml
+    - Qt5Network
+    - Qt5Gui
+    - Qt5Widgets
+    - Qt5Concurrent
+    - Qt5Test
+    - Qt5Script
+    - Qt5Sql
+Requires:
+    - kf5-filesystem
+
+Files:
+    - "%doc AUTHORS COPYING-GPL3 COPYING-LGPL3 COPYING.LIB README.md"
+    - "%{_kf5_bindir}/kwrite"
+    - "%{_kf5_bindir}/kate"
+    - "%{_kf5_libdir}/libkdeinit5_kate.so"
+    - "%{_kf5_libdir}/libkdeinit5_kwrite.so"
+    - "%{_kf5_plugindir}/*"
+    - "%{_kf5_configdir}/katerc"
+    - "%{_kf5_sharedir}/kate*"
+    - "%{_kf5_sharedir}/kwrite*"
+    - "%{_kf5_iconsdir}/hicolor/*/actions/*"
+    - "%{_kf5_sharedir}/applications/*.desktop"
+    - "%{_kf5_servicesdir}/*.desktop"
+    - "%{_kf5_htmldir}/en/kate"
+    - "%{_kf5_htmldir}/en/katepart"
+    - "%{_mandir}/man1/kate.1.gz"
