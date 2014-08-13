@@ -93,7 +93,7 @@ rm -rf %{buildroot}
 %{_kf5_plugindir}/*
 %{_kf5_configdir}/katerc
 %{_kf5_sharedir}/kate*
-%{_kf5_sharedir}/kwrite*
+%{_kf5_sharedir}/kxmlgui5
 %{_kf5_iconsdir}/hicolor/*/actions/*
 %{_kf5_sharedir}/applications/*.desktop
 %{_kf5_servicesdir}/*.desktop
