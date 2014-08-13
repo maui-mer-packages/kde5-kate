@@ -49,6 +49,15 @@ An advanced editor component which is used in numerous KDE applications
 requiring a text editing component.
 
 
+%package doc
+Summary:    Documentation and user manuals for %{name}
+Group:      Documentation
+Requires:   %{name} = %{version}-%{release}
+
+%description doc
+Documentation and user manuals for %{name}
+
+
 %prep
 %setup -q -n %{name}-%{version}/upstream
 
@@ -88,8 +97,13 @@ rm -rf %{buildroot}
 %{_kf5_iconsdir}/hicolor/*/actions/*
 %{_kf5_sharedir}/applications/*.desktop
 %{_kf5_servicesdir}/*.desktop
+# >> files
+# << files
+
+%files doc
+%defattr(-,root,root,-)
 %{_kf5_htmldir}/en/kate
 %{_kf5_htmldir}/en/katepart
 %{_mandir}/man1/kate.1.gz
-# >> files
-# << files
+# >> files doc
+# << files doc
