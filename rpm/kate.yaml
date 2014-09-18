@@ -28,6 +28,7 @@ PkgBR:
     - qt5-tools
     - kconfig-devel
     - kdoctools-devel
+    - kdbusaddons-devel
     - kguiaddons-devel
     - ki18n-devel
     - kinit-devel
@@ -38,6 +39,10 @@ PkgBR:
     - kwindowsystem-devel
     - kitemmodels-devel
     - kxmlgui-devel
+    - kwallet-devel
+    - knotifications-devel
+    - knewstuff-devel
+    - plasma-devel
 PkgConfigBR:
     - Qt5Core
     - Qt5DBus

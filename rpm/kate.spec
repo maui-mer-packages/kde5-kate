@@ -8,6 +8,12 @@ Name:       kate
 # >> macros
 # << macros
 
+# >> bcond_with
+# << bcond_with
+
+# >> bcond_without
+# << bcond_without
+
 Summary:    Advanced KDE editor applications
 Version:    5.0.0
 Release:    1
@@ -33,6 +39,7 @@ BuildRequires:  extra-cmake-modules
 BuildRequires:  qt5-tools
 BuildRequires:  kconfig-devel
 BuildRequires:  kdoctools-devel
+BuildRequires:  kdbusaddons-devel
 BuildRequires:  kguiaddons-devel
 BuildRequires:  ki18n-devel
 BuildRequires:  kinit-devel
@@ -43,6 +50,10 @@ BuildRequires:  ktexteditor-devel
 BuildRequires:  kwindowsystem-devel
 BuildRequires:  kitemmodels-devel
 BuildRequires:  kxmlgui-devel
+BuildRequires:  kwallet-devel
+BuildRequires:  knotifications-devel
+BuildRequires:  knewstuff-devel
+BuildRequires:  plasma-devel
 
 %description
 An advanced editor component which is used in numerous KDE applications
