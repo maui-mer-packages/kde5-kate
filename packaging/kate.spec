@@ -8,12 +8,6 @@ Name:       kate
 # >> macros
 # << macros
 
-# >> bcond_with
-# << bcond_with
-
-# >> bcond_without
-# << bcond_without
-
 Summary:    Advanced KDE editor applications
 Version:    5.0.0
 Release:    1
@@ -70,7 +64,7 @@ Documentation and user manuals for %{name}
 
 
 %prep
-%setup -q -n %{name}-%{version}/upstream
+%setup -q -n %{name}-%{version}
 
 # >> setup
 # << setup
