@@ -93,13 +93,12 @@ rm -rf %{buildroot}
 %doc AUTHORS COPYING-GPL3 COPYING-LGPL3 COPYING.LIB README.md
 %{_kf5_bindir}/kwrite
 %{_kf5_bindir}/kate
-%{_kf5_libdir}/libkdeinit5_kate.so
-%{_kf5_libdir}/libkdeinit5_kwrite.so
+%{_kf5_libdir}/libkdeinit5_*.so
 %{_kf5_plugindir}/*
-%{_kf5_configdir}/katerc
+%{_kf5_configdir}/*
 %{_kf5_sharedir}/kate*
 %{_kf5_sharedir}/kxmlgui5
-%{_kf5_iconsdir}/hicolor/*/actions/*
+%{_kf5_iconsdir}/hicolor/*
 %{_kf5_sharedir}/applications/*.desktop
 %{_kf5_servicesdir}/*.desktop
 # >> files
