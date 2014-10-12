@@ -63,6 +63,15 @@ Requires:   %{name} = %{version}-%{release}
 Documentation and user manuals for %{name}
 
 
+%package plasmoid
+Summary:    Kate session plasmoid
+Group:      System/Base
+Requires:   %{name} = %{version}-%{release}
+
+%description plasmoid
+Kate session plasmoid.
+
+
 %prep
 %setup -q -n %{name}-%{version}
 
@@ -111,3 +120,9 @@ rm -rf %{buildroot}
 %{_mandir}/man1/kate.1.gz
 # >> files doc
 # << files doc
+
+%files plasmoid
+%defattr(-,root,root,-)
+%{_kf5_sharedir}/plasma/*
+# >> files plasmoid
+# << files plasmoid

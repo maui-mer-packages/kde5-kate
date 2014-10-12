@@ -79,3 +79,10 @@ SubPackages:
           - "%{_kf5_htmldir}/en/kate"
           - "%{_kf5_htmldir}/en/katepart"
           - "%{_mandir}/man1/kate.1.gz"
+    - Name: plasmoid
+      Group: System/Base
+      Summary: Kate session plasmoid
+      Description: |
+        Kate session plasmoid.
+      Files:
+          - "%{_kf5_sharedir}/plasma/*"
