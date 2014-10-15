@@ -9,7 +9,7 @@ Name:       kate
 # << macros
 
 Summary:    Advanced KDE editor applications
-Version:    5.0.0
+Version:    5.0.0+git0
 Release:    1
 Group:      System/Base
 License:    GPLv2+
